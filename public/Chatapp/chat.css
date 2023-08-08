@@ -1,0 +1,164 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  
+}
+/* 
+.pull-right{
+  
+} */
+
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:rgb(255, 255, 255);
+}
+h1{
+  text-align: center;
+  padding: 3px;
+}
+
+
+#user-input{
+  position: fixed;
+    bottom: 39px;
+    left: 10;
+    right: 590px;
+    padding: 7px;
+    background-color: #6f1236;
+    width: 54.5%;
+    text-align: center; 
+}
+
+
+#message-input{
+position: relative;
+left: 0;
+ height: 35px;
+ width:42%;
+ margin-top: 5px;
+ border:green;
+
+}
+.btn-success{
+  margin-right: 2px;
+  height:35px;
+  width:70px;
+  margin-bottom:6px ;
+  padding-bottom: 7px;
+
+}
+#chat-messages
+{
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  padding:10px
+}
+
+li{
+  list-style: none;
+  padding: 5px;
+}
+
+#chat-messages>li:nth-child(odd)
+{
+align-content: right;
+text-align: right;
+background-color:#500303;
+
+}
+
+#chat-messages>li:nth-child(even) {
+  align-content: right;
+  text-align: right;
+  background-color: #d54343;
+}
+
+div.container{
+  resize: vertical;
+}
+.container{
+  background-image: url('message.jpg');
+  border: 1px solid black;
+  width:49%;
+  float: left;
+  height:520px;
+  margin-top: 20px;
+  border-color:transparent;
+  margin-left: 66px;
+
+  min-height: 80px;
+  max-height: 470px; 
+}
+
+
+.float-left{
+  padding: 10px;
+  border: 1px solid black;
+  width:32%;
+  /* float: left; */
+float: right;
+  height:520px;
+  background-image: url('message.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15px;
+  margin-right: 144px;
+}
+.btn-danger{
+
+  width:max-content;
+  background-color:#00849f;
+  color:white;
+}
+.btn-list{
+
+  width:max-content;
+  background-color:#05470c;
+  color:white;
+}
+#allgrouplist,ul{
+  padding: 3px;
+  margin:0;
+}
+#allgrouplist,button{
+  padding: 2px;
+  margin: 3px;
+
+}
+.btn-same{
+  background-color:white;
+  color: black;
+  border-radius: 5px;
+  width: max-content;
+  border: 1px solid gainsboro;
+  padding: 3px;
+
+}
+a{
+  text-decoration: none;
+  color:#dbe4ec;
+}
+a:hover{
+  color: rgb(17, 40, 218);
+  font-style: italic;
+  font-size: large;
+}
+button{
+  background-color: #E6FFE3;
+}
+
+.logout{
+  margin: 0px;
+    padding: 3px 7px;
+    background-color: #c913d6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 72px;
+}
