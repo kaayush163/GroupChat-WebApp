@@ -6,7 +6,7 @@ const httpServer = require("http").createServer(app);
 require('dotenv').config();
 
 
-const sequalize=require('./util/database')
+const sequelize=require('./util/database')
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -25,11 +25,7 @@ io.on('connection', socket => {
   })
 });
 
-app.use(cors({
-    origin:'*'   
-    // methods:['GET','POST','DELETE'],
-    // credentials:true
-}));
+app.use(cors({origin:'*'}));
 
 const userRouter = require('./routes/signup');
 const messageRouter=require('./routes/message');
@@ -56,7 +52,7 @@ Message.belongsTo(Group);
 
 
 
-sequalize.sync()
+sequelize.sync()
 .then(()=>{
       console.log('sync');
 
