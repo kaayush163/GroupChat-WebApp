@@ -1,3 +1,4 @@
+//thi is signup js functionality
 let ID;
 let url = "http://localhost:5000/users";
 const myForm = document.getElementById("my-form");
