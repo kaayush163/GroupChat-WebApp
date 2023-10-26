@@ -1,4 +1,4 @@
-
+//socket are used in frontend
 const socket = io.connect("http://localhost:5000");
 socket.on("message",(msg,userName,groupId,userId) =>{
      if(localStorage.getItem('currentGroupId')){
