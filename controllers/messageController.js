@@ -1,7 +1,8 @@
 
 const Message=require('../models/message');
 const AWS = require('aws-sdk');
-        
+
+//saving message to databases
 const addMessage=async (req,res)=>{
     try{
         const {message,groupId}=req.body;
