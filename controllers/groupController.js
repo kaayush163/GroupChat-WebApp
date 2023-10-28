@@ -81,6 +81,8 @@ async function removeUserFromGroup(req,res){
   }
 }
 
+
+//make group admin
 async function changeGroupAdmin(req,res){
   try 
   {
