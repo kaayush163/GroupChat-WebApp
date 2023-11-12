@@ -404,6 +404,7 @@ function showpostmsg(newMsg){
     chats.appendChild(newPara);
 }
 
+//file uploading from device
 async function filesend(){
   try{
       const fileInput = document.getElementById('sendAttachmentButton');     
