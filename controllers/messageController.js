@@ -59,7 +59,7 @@ const uploadFile=async(req,res,next)=>{
       }
 }
 
-
+//Upload to AWS S3
 const uploadToS3 =async (data, filename) => {
     const BUCKET_NAME = process.env.S3_BUCKET_NAME;
    const IAM_USER_KEY = process.env.S3_ACCESS_KEY;
