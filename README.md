@@ -10,7 +10,7 @@ Group-chat app has been made with the modern technologies like Express.js, Node.
 - Can have One-One and Many-Many conversation with anyone in the group
 - The app features users being able to send text files and images in chatbox,and AWS S3 Bucket is used to store those files.
 - Users can create groups, add friends, and make other members admins.
-- Additionally, the app is being used in real-time scenario using Socket.io.
+- Additionally, the app is being used in real-time responsiveness scenario for chatting using Socket.io.
 
 
 ## Tech Stack
